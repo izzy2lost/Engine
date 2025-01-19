@@ -1,4 +1,4 @@
-name: Cleanup Visual Studio
+name: Storage Checker
 
 on:
   workflow_dispatch
