@@ -22,8 +22,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Clone the source repository
+        env:
+          SOURCE_REPO_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
         run: |
-          git clone --depth=1 --branch ${{ github.event.inputs.source_branch }} ${{ github.event.inputs.source_repo_url }} source-repo
+          git clone --depth=1 --branch ${{ github.event.inputs.source_branch }} https://$SOURCE_REPO_TOKEN@${{ github.event.inputs.source_repo_url }} source-repo
 
       - name: Create new branch and copy changes
         run: |
