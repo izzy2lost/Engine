@@ -10,17 +10,14 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v2
 
-      - name: Add other repository as remote
-        run: git remote add other-repo https://github.com/izzy2lost/UnrealEngine.git
+      - name: Add private repository as remote
+        run: git remote add UnrealEngine https://izzy2lost:${{ secrets.GH_TOKEN }}@github.com/izzy2lost/UnrealEngine.git
 
-      - name: Fetch branch from other repository
-        run: git fetch other-repo 4.22-uwp
+      - name: Fetch branch from private repository
+        run: git fetch UnrealEngine 4.22-uwp
 
       - name: Create a new branch from fetched branch
-        run: git checkout -b 4.22-uwp other-repo/4.22-uwp
+        run: git checkout -b 4.22-uwp UnrealEngine/4.22-uwp
 
       - name: Push new branch to GitHub
         run: git push origin 4.22-uwp
-
-    env:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
