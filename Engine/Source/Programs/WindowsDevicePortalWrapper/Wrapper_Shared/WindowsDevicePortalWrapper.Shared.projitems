@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>af72a46d-5d30-4fb4-8d3e-b516ed19f9a4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Microsoft.Tools.WindowsDevicePortal</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\AppCrashDumpCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\AppDeployment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\AppFileExplorer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\DeviceManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\Dns-Sd.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\DumpCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\Etw.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\Networking.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\OsInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\Power.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\RemoteControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\PerformanceData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\TaskManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\WiFiManagement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\WindowsErrorReporting.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core_Shared\WindowsPerformanceRecorder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DevicePortal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events_Shared\ApplicationInstallStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events_Shared\ConnectionStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events_Shared\WebSocketMessageReceivedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions_Shared\DevicePortalException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HoloLens_Shared\HolographicOs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HoloLens_Shared\HolographicPerception.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HoloLens_Shared\HolographicThermal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HoloLens_Shared\MixedRealityCapture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HoloLens_Shared\PerceptionSimulationPlayback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HoloLens_Shared\PerceptionSimulationRecording.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\RequestHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\ResponseHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\HttpHeadersHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\RestDelete.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\RestGet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\RestPost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\RestPut.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpRest_Shared\WebSocket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces_Shared\IDevicePortalConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\BluetoothConnectivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\Limpet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\ApplicationManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\AudioDevices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\ProcessManagement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\IcsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\IoTOnboarding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\RemoteSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\DeviceInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IoT_Shared\WindowsUpdate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\XboxLiveSandbox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\SmbShare.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\UserManagement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\XboxAppDeployment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\FiddlerSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\XboxMediaCapture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xbox_Shared\XboxSettings.cs" />
+  </ItemGroup>
+</Project>
