@@ -247,8 +247,11 @@
 		<!-- Content -->
 		Engine/Content/....psd
 		Engine/Content/....pdn
-		Engine/Content/....po
-
+		Engine/Content/....po		
+		
+		Engine/Binaries/*/…pdb
+        Engine/Plugins/…pdb
+        
 		<!-- Programs -->
 		Engine/Programs/UnrealGameSync/...
 
