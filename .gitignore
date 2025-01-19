@@ -23,6 +23,9 @@
 !Setup.command
 !Setup.sh
 
+!/.github/
+!/.github/**
+
 # C/C++ source files
 !*.c
 !*.cc
