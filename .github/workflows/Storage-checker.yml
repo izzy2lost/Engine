@@ -1,0 +1,24 @@
+name: Cleanup Visual Studio
+
+on:
+  workflow_dispatch
+
+jobs:
+  check-available-storage:
+    runs-on: windows-2019
+    steps:
+      - name: Check Free Disk Space Before Checkout
+        run: |
+          echo "Disk space before cleanup:"
+          df -h
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+
+      - name: Check Free Disk Space After Checkout
+        run: |
+          echo "Disk space after cleanup:"
+          df -h
