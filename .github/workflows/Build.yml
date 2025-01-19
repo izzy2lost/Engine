@@ -28,9 +28,12 @@ jobs:
             "--add Microsoft.VisualStudio.ComponentGroup.UCRT", # UCRT SDK
             "--add Microsoft.VisualStudio.Workload.NativeGame", # Game development with C++
             "--add Microsoft.Component.MSBuild", # MSBuild
-            "--add Microsoft.VisualStudio.Component.NuGet" # NuGet Package Manager
+            "--add Microsoft.VisualStudio.Component.NuGet", # NuGet Package Manager
+            "--add Microsoft.VisualStudio.Workload.CoreEditor", # Visual Studio core editor
+            "--add Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions", # Web development
+            "--add Microsoft.VisualStudio.Component.CMake" # CMake tools for Windows
         )
-        Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" -ArgumentList ($components -join " ") -Wait
+        Start-Process -FilePath "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\vs_installer.exe" -ArgumentList ($components -join " "), "--quiet", "--wait"
 
     # Step 3: Run Setup.bat
     - name: Run Setup.bat
