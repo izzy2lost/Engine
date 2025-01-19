@@ -1,0 +1,25 @@
+name: Fetch Branch from Another Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  fetch-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: Add other repository as remote
+        run: git remote add other-repo https://github.com/izzy2lost/UnrealEngine.git
+
+      - name: Fetch branch from other repository
+        run: git fetch other-repo 4.22-uwp
+
+      - name: Create a new branch from fetched branch
+        run: git checkout -b new-branch https://github.com/izzy2lost/UnrealEngine.git/4.22-uwp
+
+      - name: Push new branch to GitHub
+        run: git push origin 4.22-uwp
